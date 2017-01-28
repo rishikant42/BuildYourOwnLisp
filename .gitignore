@@ -1,9 +1,2 @@
-# Ignore all
-*
-
-# But Unignore all with patter
-!*.*
-
-# But Ignore .out & .swp files
 *.out
 *.swp

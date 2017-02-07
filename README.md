@@ -12,13 +12,16 @@ mpc.c => parser
 
 #Example
 ```
-$ gcc -std=c99 -Wall evaluation.c mpc.c -ledit -lm -o eval
-$ ./eval 
-Lispy Version 0.0.0.0.3
+$ gcc -g -std=c99 -Wall belispy.c mpc.c -ledit -lm -o blispy
+$ ./blispy 
+Lispy Version 0.0.0.0.4
 Press Ctrl+c to Exit
 
-lispy> + 1 2 3 
-6
-lispy> + 1 (* 2 3 (+ 4 5) (/ 8 2)) 6 
-223
+lispy> + (* 2 3) (* 4 5) 6
+32
+lispy> + (* 2 3) (* 4 5) 6 (/ 20 5)
+36
+lispy> / 8 0
+Error: Div By Zero!
+lispy>
 ```

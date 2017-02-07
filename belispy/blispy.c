@@ -25,7 +25,13 @@ double eval_op(double x, char* op, double y) {
   if (strcmp(op, "+") == 0) { return x + y; }
   if (strcmp(op, "-") == 0) { return x - y; }
   if (strcmp(op, "*") == 0) { return x * y; }
-  if (strcmp(op, "/") == 0) { return x / y; }
+  if (strcmp(op, "/") == 0) { 
+    if (y == 0) {
+      fprintf(stderr, "ERROR: Division by zero!\n");
+      exit(-1);
+    }
+    return x / y; 
+  }
   return 0;
 }
 

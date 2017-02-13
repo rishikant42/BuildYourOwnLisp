@@ -8,6 +8,7 @@ gcc => compiler name
 mpc.c => parser
 -ledit => editliine lib for scroll up & down
 -lm  ==> math lib
+-std=c99 ==> use this flag to tell the compiler which version or standard of C we are programming with
 ```
 
 #Example

@@ -1,28 +1,29 @@
 # BuildYourOwnLisp
 http://buildyourownlisp.com/
 
+Install instructions
 ```
-gcc -std=c99 -Wall parsing.c mpc.c -ledit -lm -o parsing
+$ git clone https://github.com/rishikant42/BuildYourOwnLisp
+$ cd BuildYourOwnLisp
+$ sudo make install
+```
 
-gcc => compiler name
-mpc.c => parser
--ledit => editliine lib for scroll up & down
--lm  ==> math lib
--std=c99 ==> use this flag to tell the compiler which version or standard of C we are programming with
+Uninstall instructions
+```
+$ sudo make uninstall
 ```
 
 #Example
 ```
-$ gcc -g -std=c99 -Wall belispy.c mpc.c -ledit -lm -o blispy
-$ ./blispy 
-Lispy Version 0.0.0.0.4
+$ blispy 
+Lispy Version 0.1
 Press Ctrl+c to Exit
 
-lispy> + (* 2 3) (* 4 5) 6
-32
-lispy> + (* 2 3) (* 4 5) 6 (/ 20 5)
-36
+lispy> + 1.1 (* 2.2 3.3 (+ 4.4 5.5 6.6) 7.7) (/ 8.8 2.2) 9.9
+937.38
 lispy> / 8 0
-Error: Div By Zero!
-lispy>
+Error: Division By Zero!
+lispy> + 2 3.5 (* 4 5.5) 6
+33.50
+lispy> 
 ```

@@ -25,5 +25,7 @@ lispy> / 8 0
 Error: Division By Zero!
 lispy> + 2 3.5 (* 4 5.5) 6
 33.50
+lispy> + 2 3
+5.00
 lispy> 
 ```

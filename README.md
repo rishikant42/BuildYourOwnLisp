@@ -27,5 +27,7 @@ lispy> + 2 3.5 (* 4 5.5) 6
 33.50
 lispy> + 2 3
 5.00
+lispy> * 2 (+ 3 4 (/ 15 0) 6) 7
+Error: Division By Zero!
 lispy> 
 ```
